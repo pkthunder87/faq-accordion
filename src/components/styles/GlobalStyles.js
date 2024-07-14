@@ -2,6 +2,17 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
+/* Custom properties */
+:root {
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-bg: hsl(275, 100%, 97%);
+  --color-main: hsl(292, 42%, 14%);
+  --color-accent: hsl(292, 16%, 49%);
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -20,13 +31,14 @@ html {
   @media only screen and (max-width: 400px) {
     font-size: 75%;
   }
+
+  background-color: var(--color-main)
 }
 
 body {
   height: 100vh;
   width: 100vw;
-
-  font-size: 1.5rem;
+  
   text-align: left;
   -webkit-font-smoothing: antialiased;
 
@@ -34,6 +46,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  background-image: url("background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: var(--color-bg);
+
+  * {
+    font-size: 1.6rem;
+  }
 }
 `;
 
