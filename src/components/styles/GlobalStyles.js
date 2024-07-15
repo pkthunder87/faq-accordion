@@ -2,16 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
-/* Custom properties */
-:root {
-
-  --color-white: hsl(0, 0%, 100%);
-  --color-bg: hsl(275, 100%, 97%);
-  --color-main: hsl(292, 42%, 14%);
-  --color-accent: hsl(292, 16%, 49%);
-}
-
-
 
 * {
   margin: 0;
@@ -52,8 +42,11 @@ body {
   font-style: normal;
 
   background-image: url("background-pattern-desktop.svg");
+  background-size: 130%;
+  background-position: top 0% right 60% ;
   background-repeat: no-repeat;
-  background-color: var(--color-bg);
+  background-color: ${({ theme }) => theme.colorBg};
+  
 
   * {
     font-size: 1.6rem;

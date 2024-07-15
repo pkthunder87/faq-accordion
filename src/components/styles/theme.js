@@ -1,19 +1,8 @@
-const darkTheme = {
-  background: "#000000",
-  textColor: "#fff",
-};
-const lightTheme = {
-  background: "#008888",
-  textColor: "#000",
-};
-
 const theme = {
-  dark: {
-    color: darkTheme,
-  },
-  light: {
-    color: lightTheme,
-  },
+  colorWhite: "hsl(0, 0%, 100%)",
+  colorBg: "hsl(275, 100%, 97%)",
+  colorMain: "hsl(292, 42%, 14%)",
+  colorAccent: "hsl(292, 16%,49%)",
 };
 
 export default theme;

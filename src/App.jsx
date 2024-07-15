@@ -1,19 +1,16 @@
 import { ThemeProvider } from "styled-components";
-import StyledContainer from "./components/styles/Container.styled";
-import { useState } from "react";
 import theme from "./components/styles/theme";
 import GlobalStyles from "./components/styles/GlobalStyles";
+import AppLayout from "./components/styles/AppLayout.styled";
 
 function App() {
-  const [currentTheme, setCurrentTheme] = useState("dark");
-
   return (
-    <ThemeProvider theme={theme[currentTheme]}>
+    <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
-        <StyledContainer>
+        <AppLayout>
           <h1>FAQ Accordion</h1>
-        </StyledContainer>
+        </AppLayout>
       </>
     </ThemeProvider>
   );
