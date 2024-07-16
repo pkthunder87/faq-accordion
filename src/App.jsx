@@ -2,6 +2,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "./components/styles/theme";
 import GlobalStyles from "./components/styles/GlobalStyles";
 import AppLayout from "./components/styles/AppLayout.styled";
+import Header from "./components/Header";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <>
         <GlobalStyles />
         <AppLayout>
-          <h1>FAQ Accordion</h1>
+          <Header />
         </AppLayout>
       </>
     </ThemeProvider>

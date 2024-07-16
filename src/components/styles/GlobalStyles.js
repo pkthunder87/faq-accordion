@@ -46,11 +46,7 @@ body {
   background-position: top 0% right 60% ;
   background-repeat: no-repeat;
   background-color: ${({ theme }) => theme.colorBg};
-  
 
-  * {
-    font-size: 1.6rem;
-  }
 }
 `;
 
