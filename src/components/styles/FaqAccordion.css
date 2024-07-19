@@ -1,0 +1,55 @@
+/* Custom css bootstrap overrides */
+.accordion-button:not(.collapsed)::after {
+  background-image: url("icon-minus.svg");
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-main);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--color-main);
+}
+
+.accordion-button::after {
+  background-image: url("icon-plus.svg");
+}
+
+.accordion-button {
+  height: 4.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-main);
+}
+
+.accordion-button:hover {
+  color: var(--color-star);
+  cursor: url("icons8-cursor-18.png"), auto;
+}
+
+.accordion {
+  --bs-accordion-btn-icon-width: 2rem;
+  --bs-accordion-border-color: var(--color-bg);
+  --bs-accordion-border-width: var(--bs-border-width);
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-top: 0.5rem;
+}
+
+.accordion-body {
+  margin-top: -0.8rem;
+}
+
+.accordion-item {
+  color: var(--color-accent);
+  font-size: 1rem;
+}
+
+.accordion-button:focus {
+  border-color: white;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white;
+  box-shadow: none;
+}

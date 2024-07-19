@@ -15,6 +15,17 @@ function App() {
           <FaqAccordion />
         </AppLayout>
       </>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://icons8.com/icon/37613/finger-up"
+      >
+        Cursor
+      </a>{" "}
+      icon by{" "}
+      <a target="_blank" rel="noreferrer" href="https://icons8.com">
+        Icons8
+      </a>
     </ThemeProvider>
   );
 }

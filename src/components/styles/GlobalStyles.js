@@ -1,7 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-
+:root {
+  --color-white: ${({ theme }) => theme.colorWhite};
+  --color-bg: ${({ theme }) => theme.colorBg};
+  --color-main: ${({ theme }) => theme.colorMain};
+  --color-accent: ${({ theme }) => theme.colorAccent};
+  --color-star: ${({ theme }) => theme.colorStar};
+}
 
 * {
   margin: 0;
@@ -46,7 +52,6 @@ body {
   background-position: top 0% right 60% ;
   background-repeat: no-repeat;
   background-color: ${({ theme }) => theme.colorBg};
-
 }
 `;
 
