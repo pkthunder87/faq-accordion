@@ -37,7 +37,6 @@ function FaqAccordion() {
       </Accordion.Item>
       <Accordion.Item eventKey="3">
         <Accordion.Header>
-          {" "}
           How can I get help if I&apos;m stuck on a challenge?
         </Accordion.Header>
         <Accordion.Body>
