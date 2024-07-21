@@ -1,11 +1,11 @@
 import { screen, render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import App from "../App";
 import { expect } from "vitest";
+import FaqAccordion from "./FaqAccordion";
 
 test("accordion displays and hides item header and body content correctly", async () => {
   const user = userEvent.setup();
-  const { container } = render(<App />);
+  const { container } = render(<FaqAccordion />);
 
   // Test all accordion headers are displayed
   const itemHeading1 = screen.getByRole("button", {
@@ -52,6 +52,9 @@ test("accordion displays and hides item header and body content correctly", asyn
   expect(itemBody4).not.toHaveClass("show");
 });
 
-test("displays the correct icon for a collapsed and non-collapsed item header", async () => {});
+test("displays the correct icon for a collapsed and non-collapsed item header", async () => {
+  const user = userEvent.setup();
+  render(<FaqAccordion />);
+});
 
 test("displays the correct mouse pointer and highlights on hover", async () => {});
