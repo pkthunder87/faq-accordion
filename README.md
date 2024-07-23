@@ -19,6 +19,8 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 - Flexbox
 - Grid
 - Vite
+- Vitest
+- React Testing Library
 
 ## Author
 
