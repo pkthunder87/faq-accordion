@@ -21,6 +21,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 - Vite
 - Vitest
 - React Testing Library
+- React Bootstrap
 
 ## Author
 
