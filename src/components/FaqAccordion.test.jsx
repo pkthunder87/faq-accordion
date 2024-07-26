@@ -2,6 +2,7 @@ import { screen, render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { expect } from "vitest";
 import FaqAccordion from "./FaqAccordion";
+import "@testing-library/jest-dom";
 
 test("accordion displays and hides item header and body content correctly", async () => {
   const user = userEvent.setup();
@@ -55,6 +56,14 @@ test("accordion displays and hides item header and body content correctly", asyn
 test("displays the correct icon for a collapsed and non-collapsed item header", async () => {
   const user = userEvent.setup();
   render(<FaqAccordion />);
+
+  const itemHeading1 = screen.getByRole("button", {
+    name: /What is Frontend Mentor, and how will it help me?/i,
+  });
+
+  const btnImg = window.getComputedStyle(itemHeading1, ":after").content;
+
+  console.log(btnImg);
 });
 
 test("displays the correct mouse pointer and highlights on hover", async () => {});
