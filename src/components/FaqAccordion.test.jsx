@@ -66,4 +66,7 @@ test("displays the correct icon for a collapsed and non-collapsed item header", 
   console.log(btnImg);
 });
 
-test("displays the correct mouse pointer and highlights on hover", async () => {});
+test("displays the correct mouse pointer and highlights on hover", async () => {
+  const user = userEvent.setup();
+  render(<FaqAccordion />);
+});
