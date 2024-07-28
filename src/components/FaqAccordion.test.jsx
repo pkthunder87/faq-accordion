@@ -53,7 +53,7 @@ test("accordion displays and hides item header and body content correctly", asyn
   expect(itemBody4).not.toHaveClass("show");
 });
 
-test("displays the correct icon for a collapsed and non-collapsed item header", async () => {
+test("displays the correct mouse cursor", async () => {
   const user = userEvent.setup();
   render(<FaqAccordion />);
 
@@ -61,12 +61,9 @@ test("displays the correct icon for a collapsed and non-collapsed item header", 
     name: /What is Frontend Mentor, and how will it help me?/i,
   });
 
-  const btnImg = window.getComputedStyle(itemHeading1, ":after").content;
+  // hover over heading1 button
+  await user.hover(itemHeading1);
 
-  console.log(btnImg);
-});
-
-test("displays the correct mouse pointer and highlights on hover", async () => {
-  const user = userEvent.setup();
-  render(<FaqAccordion />);
+  // mouse pointer changes on hover
+  expect(itemHeading1).toHaveStyle('cursor: url("icons8-cursor-18.png"), auto');
 });
