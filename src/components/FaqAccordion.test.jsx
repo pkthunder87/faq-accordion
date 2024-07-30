@@ -26,7 +26,6 @@ test("accordion displays and hides item header and body content correctly", asyn
   });
 
   // displays the 1st accordion item by default
-  // USE getByTestId with toHaveClass()
   const itemBody1 = screen.getByText(
     /Frontend Mentor offers realistic coding challenges to help developers improve their frontend/i
   ).parentElement;
