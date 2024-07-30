@@ -3,7 +3,7 @@ import styled from "styled-components";
 const AppLayout = styled.main`
   width: 90dvw;
   max-width: 37rem;
-  height: 80dvh;
+  height: auto;
   max-height: 34rem;
   padding: 2.15rem 2.3rem;
   margin: 0 auto;
