@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 html {
@@ -32,8 +33,8 @@ html {
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
   
   text-align: left;
   -webkit-font-smoothing: antialiased;
